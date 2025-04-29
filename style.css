@@ -1,8 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-color: black;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 
 .principal {
@@ -57,16 +66,17 @@ body {
 .botao-pronto {
     background-color: white;
     width: 150px;
+    border-radius: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    min-height: 100%;
+    cursor: pointer;
+    display: none;
+}
+
+.tarefa:hover .botao-pronto {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: black;
-    border-radius: 5px;
-    font-family: 'Times New Roman', Times, serif;
-    background-color: white;
-    display: none;
-    min-height: 100%;
-    cursor: pointer;
 }
 
 .botao-pronto p {
@@ -76,8 +86,3 @@ body {
     justify-content: center;
     font-family: 'Times New Roman', Times, serif;
 }
-
-.tarefa:hover .botao-pronto {
-    display: block;
-}
-
